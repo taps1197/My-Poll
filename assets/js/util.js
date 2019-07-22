@@ -79,8 +79,8 @@ function apiAction(action, img, label, gallery) {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
-                "app_id": "de8961ac",
-                "app_key": "b3c5774797323ebd37f789662517a1f6"
+                "app_id": "ba0a24c4",
+                "app_key": "a43c8444406ffa00a859c6a95daa47c3"
             },
             body: JSON.stringify(bodyData)
         })
