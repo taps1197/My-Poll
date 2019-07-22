@@ -169,7 +169,7 @@ encrypted data.</ol>
  -->
 
  <input type="number" name="Aadhaar number" placeholder="Aadhaar number">
- <a href="aadhaarlog.html"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:10px ; text-align: center; margin: 0 auto">Login</button>
+ <a href="aadhaarlog.html"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:10px ; text-align: center; margin: 0 auto">Enter</button>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -188,73 +188,11 @@ encrypted data.</ol>
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">COMPLAINTS</h3>
-  <p class="w3-center"><em>We'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> IIIT Bhubaneswar, INDIA<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 8839718453<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: shaswat221b@gmail.com<br>
-      </div>
-      <p>Send in your complaints, querries <i class="fa fa-envelope"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
 </footer>
-
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -276,11 +214,6 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://www.google.co.in/maps/place/IIIT/@20.2947354,85.7412261,17z/data=!3m1!4b1!4m5!3m4!1s0x3a1907923fc9c557:0xd3b0b05336a9dfaa!8m2!3d20.2947304!4d85.7434094"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>
